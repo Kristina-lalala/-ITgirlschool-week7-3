@@ -1,0 +1,462 @@
+@font-face {
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 700;
+  src: url('../fonts/noto-serif-v21-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+       url('../fonts/noto-serif-v21-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-serif-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-serif-v21-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-serif-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-serif-v21-latin-700.svg#NotoSerif') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    font-display: swap;
+    src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy-Regular";
+    font-display: swap;
+    src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy-Semibold";
+    font-display: swap;
+    src: url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+@media screen and (min-width: 1000px) {
+
+    body {
+        background: url(/assets/image/bgc.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-rows: 10% 1fr 1fr 1fr 10%;
+        justify-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 3fr 1fr 1fr 2fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .header__link {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Gilroy-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 150%;
+    }
+
+    .pctr {
+        width: 30px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 5vh;
+    }
+
+    .text {
+        display: grid;
+        align-self: flex-end;
+        justify-items: center;
+        width: 100vw;
+    }
+
+    h1 {
+        left: 595px;
+        top: 600px;
+        text-align: center;
+        font-family: 'Noto Serif';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6em;
+        line-height: 49px;
+        color: #FFFFFF;
+    }
+
+    .button_1 {
+        width: 15vw;
+    }
+
+    .article {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .article_div {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .article_link{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Gilroy-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 6em;
+        line-height: 150%;
+    }
+
+    .aside {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .aside_div {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .aside_link {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Gilroy-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5em;
+        line-height: 150%;
+    }
+
+    .footer {
+        height: 6.5vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 8% 1% 8% 1% 8% 1% 8% 1% 8% 1% 8%;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        justify-items: center;
+        align-items: flex-start;
+        align-self: flex-end;
+        gap: 20px;
+    }
+
+    .jewelry {
+        height: 60px;
+        width: 160px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    body {
+        background: url(/assets/image/bgc.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-rows: 10% 1fr 1fr 1fr 10%;
+        justify-items: center;
+        height: 100vh;
+        width: 100vw;
+        padding: 2%;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1.5fr 3fr 0.5fr 1fr 3fr 0.5fr 0.5fr;
+        align-items: center;
+        justify-items: center;
+        padding: 2%;
+    }
+
+    .header__link {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Gilroy-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .text {
+        display: grid;
+        align-self: flex-end;
+        justify-items: center;
+        width: 100vw;
+    }
+
+    h1 {
+        width: 730px;
+        height: 49px;
+        left: 595px;
+        top: 600px;
+        text-align: center;
+        font-family: 'Noto Serif';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4em;
+        line-height: 49px;
+        color: #FFFFFF;
+    }
+
+    .button {
+        width: 261px;
+        height: 51px;
+        left: 830px;
+        top: 699px;
+    }
+
+    .article {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .article_div {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .article_link{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Gilroy-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3em;
+        line-height: 150%;
+    }
+
+    .aside {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .aside_div {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .aside_link {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Gilroy-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3em;
+        line-height: 150%;
+    }
+
+    .footer {
+        height: 6.5vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 8% 1% 8% 1% 8% 1% 8% 1% 8% 1% 8%;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        justify-items: center;
+        align-items: flex-start;
+        align-self: flex-end;
+        gap: 20px;
+    }
+
+    .jewelry {
+        height: 40px;
+        width: 100px;
+    }
+
+    .line {
+        height: 40px;
+    }
+}
+
+
+@media screen and (max-width: 599px) {
+    .footer {
+        display: none;
+    }
+
+    body {
+        background: url(/assets/image/bgc.png) no-repeat;
+        height: 10vh;
+        background-position: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        height: 100vh;
+    }
+
+    .header {
+        display: grid;
+        grid-template-rows: 2fr 2fr 2fr 3fr 1fr 1fr 2fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .header__link {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Gilroy-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8em;
+        line-height: 150%;
+    }
+
+    .pctr {
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: end;
+    }
+
+    .text {
+        display: grid;
+        align-self: flex-end;
+        justify-items: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Noto Serif';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1em;
+        line-height: 49px;
+        color: #FFFFFF;
+    }
+
+    .button {
+        left: 830px;
+        top: 699px;
+    }
+
+    .button_1 {
+        width: 136px;
+        height: 35px;
+    }
+
+    .article {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    .article_div {
+        display: grid;
+        justify-content: center;
+        align-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .article_link{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Gilroy-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 150%;
+    }
+
+    .aside {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .aside_div {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .aside_link {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: 'Gilroy-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 150%;
+    }
+}
